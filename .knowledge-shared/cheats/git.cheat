@@ -1,0 +1,18 @@
+% git
+# 作業ツリーの状態を確認
+git status
+
+# 直前のコミットを修正（コメント含む）
+git commit --amend
+
+# 直近の 3 コミットを squash
+git rebase -i HEAD~3
+
+# リモートの新しいブランチを取得
+git fetch origin && git checkout -b feature origin/feature
+
+# 特定ファイルだけを過去に戻す
+git checkout HEAD~1 -- path/to/file
+
+# リモートURL確認
+git remote -v

@@ -1,0 +1,10 @@
+- name: Foo Motors
+  pm: "田中 太郎"
+  email: "taro.tanaka@foo.example.com"
+  tel: "+81-3-1234-5678"
+  tags: [oem, priority-a]
+
+- name: Bar Electronics
+  pm: "Suzuki Hana"
+  email: "hana.suzuki@bar.example.com"
+  tags: [tier1]
