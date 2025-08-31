@@ -25,7 +25,7 @@ if grep -Fq "${MARK_BEGIN}" "${BASHRC}" 2>/dev/null; then
 fi
 
 # 新しいブロックを末尾に追記
-printf "\n%s\n" "${BLOCK}" >> "${BASHRC}"
+#printf "\n%s\n" "${BLOCK}" >> "${BASHRC}"
 
 echo
 echo "✅ スケルトン作成完了"
