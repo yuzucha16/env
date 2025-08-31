@@ -1,16 +1,25 @@
-# Installer
+# Windows setup
 
-## setup
+## Install
 
-- ネットワークを使わない場合
+- ネットワークを使わないでログイン処理を進める
     - Shift + F10
     - oobe\bypassnro.cmd
 
-- ファイル名を指定して実行
-    - control
-    - sysdm.cpl
-    - devmgmt.msc
-    
+- Windows Updateを行う
+
+- Assistant dellをインストールする
+
+- タスクバー設定を行う
+	- 左に寄せる，隠す，アイテムを減らす
+	
+- コントロールパネル
+	- カンマ/ピリオド，半角スペース，IME:履歴オフ，マウスサイズ
+	- win + Rの履歴登録
+		- control
+		- sysdm.cpl
+		- devmgmt.msc
+
 ## git
 - config
   ```shell
@@ -25,8 +34,6 @@
 
 - `開発者向け設定` をオンにする．
   - `Windows`ボタンから`開発者向け`と検索する
-
-
 
 ## シンボリックリンクの割り当て権限
 
