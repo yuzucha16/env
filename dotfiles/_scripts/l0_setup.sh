@@ -77,11 +77,9 @@ mkdir -p \
 sudo curl -fsSLo /tmp/go1.25.0.linux-amd64.tar.gz https://go.dev/dl/go1.25.0.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf /tmp/go1.25.0.linux-amd64.tar.gz
 /usr/local/go/bin/go env -w GOBIN=$HOME/.local/bin
-/usr/local/go/bin/go install github.com/x-motemen/ghq@latest
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 $HOME/.cargo/bin/cargo version
-$HOME/.cargo/bin/cargo install broot lsd
 
 echo "[*] Setup complete!"

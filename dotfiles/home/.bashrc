@@ -292,6 +292,12 @@ nstree() {
 [ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
 [ -f /usr/share/doc/fzf/examples/completion.bash ]   && source /usr/share/doc/fzf/examples/completion.bash
 
+# pet script
+function prev() {
+  PREV=$(echo `history | tail -n2 | head -n1` | sed 's/[0-9]* //')
+  sh -c "pet new `printf %q "$PREV"`"
+}
+
 #### =========[ ローカル上書き（任意） ]=========
 # XDG 配下でのローカル拡張（マシン固有・社内PC等）
 [ -f "$XDG_CONFIG_HOME/bashrc.local" ] && . "$XDG_CONFIG_HOME/bashrc.local"
