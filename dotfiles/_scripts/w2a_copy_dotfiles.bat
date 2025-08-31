@@ -28,7 +28,8 @@ set "FILES[8]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
 set "FILES[9]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
 set "FILES[10]=home\.gitconfig|%USERPROFILE%\.gitconfig"
 set "FILES[11]=home\.gitignore_global|%USERPROFILE%\.gitignore_global"
-set "MAX_IDX=11"
+set "FILES[12]=vscode|%APPDATA%\Code\User"
+set "MAX_IDX=12"
 
 REM            @("Microsoft.PowerShell_profile.ps1",   "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"),
 REM            @("profile.ps1",                        "$HOME\Documents\PowerShell\profile.ps1"),

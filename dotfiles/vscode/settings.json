@@ -1,0 +1,63 @@
+{
+  "editor.lineNumbers": "on",
+  "editor.renderLineHighlight": "line",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.scrollbar.verticalHasArrows": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.linkedEditing": true,
+  "workbench.tree.indent": 12,
+  "workbench.editor.showTabs": true,
+  "workbench.editor.wrapTabs": true,
+  "workbench.startupEditor": "none",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.autoGuessEncoding": true,
+
+  "search.useIgnoreFiles": true,
+  "search.followSymlinks": true,
+  "search.useGlobalIgnoreFiles": true,
+
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-c>": false
+  },
+  "vim.statusBarColorControl": false,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.autoSwitchInputMethod.enable": false,
+
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=never",
+    "--completion-style=detailed",
+    "--query-driver=/usr/bin/arm-none-eabi-*,/opt/gcc-arm*/bin/arm-none-eabi-*"
+  ],
+  "clangd.onConfigChanged": "restart",
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.formatting": "Disabled",
+
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.configureOnOpen": false,
+  "cmake.generator": "Ninja",
+  "cmake.exportCompileCommandsFile": true,
+  "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": false,
+
+  "workbench.colorTheme": "Gruvbox Material Dark",
+
+  "editor.codeLens": false
+}
