@@ -12,6 +12,20 @@ require("shared.lazy").setup({
         pickers = { lsp_workspace_symbols = { fname_width = 60, symbol_width = 60 } }
       })
     end },
+  
+  -- === Git: WSL 限定で軽量導入 ===
+  {
+    "tpope/vim-fugitive",
+    cond = is_wsl, -- WSL のときだけ読み込む
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    cond = is_wsl,
+    opts = {
+      -- 既定値で十分に軽い＆実用的
+      -- ここに必要があれば minimal オプションを追加
+    },
+  },
   { "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" } },
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -95,3 +109,35 @@ vim.keymap.set('n','<leader>sc', function() tb.lsp_workspace_symbols({ query='@c
 vim.keymap.set('n','<leader>sf', function() tb.lsp_workspace_symbols({ query='@function' })  end, { desc = 'Symbols: Function' })
 vim.keymap.set('n','<leader>ss', tb.lsp_workspace_symbols, { desc = 'Symbols: Any' })
 vim.keymap.set('n','<leader>sd', tb.lsp_document_symbols,  { desc = 'Symbols: Document' })
+
+-- fugitive: よく使う基本操作
+vim.keymap.set("n", "<leader>gs", ":Git<CR>",                      { desc = "Git status (fugitive)" })
+vim.keymap.set("n", "<leader>ga", ":Git add %<CR>",                { desc = "Git add current file" })
+vim.keymap.set("n", "<leader>gc", ":Git commit<CR>",               { desc = "Git commit" })
+vim.keymap.set("n", "<leader>gp", ":Git push<CR>",                 { desc = "Git push" })
+vim.keymap.set("n", "<leader>gx", ":Git switch ",                  { desc = "Git switch branch" })
+vim.keymap.set("n", "<leader>gl", ":Git log --oneline --graph<CR>",{ desc = "Git log oneline" })
+
+-- diff: 現在バッファ vs HEAD を素早く確認
+vim.keymap.set("n", "<leader>gd", ":Gdiffsplit<CR>",               { desc = "Git diff split (HEAD vs %)" })
+
+-- gitsigns: ハンク単位の操作（軽量＆直感的）
+local gs_ok, gs = pcall(require, "gitsigns")
+if gs_ok then
+  vim.keymap.set("n", "]h", gs.next_hunk,                          { desc = "Next hunk" })
+  vim.keymap.set("n", "[h", gs.prev_hunk,                          { desc = "Prev hunk" })
+  vim.keymap.set("n", "<leader>hs", gs.stage_hunk,                 { desc = "Stage hunk" })
+  vim.keymap.set("n", "<leader>hr", gs.reset_hunk,                 { desc = "Reset hunk" })
+  vim.keymap.set("n", "<leader>hp", gs.preview_hunk,               { desc = "Preview hunk" })
+  vim.keymap.set("n", "<leader>hb", function() gs.blame_line({full=true}) end, { desc = "Blame line (full)" })
+end
+
+-- （任意）Telescope を併用して履歴/ブランチを軽快に
+local ok_tel, builtin = pcall(require, "telescope.builtin")
+if ok_tel then
+  vim.keymap.set("n", "<leader>gS", builtin.git_status,            { desc = "Telescope: git status" })
+  vim.keymap.set("n", "<leader>gB", builtin.git_branches,          { desc = "Telescope: git branches" })
+  vim.keymap.set("n", "<leader>gC", builtin.git_commits,           { desc = "Telescope: git commits" })
+  vim.keymap.set("n", "<leader>gF", builtin.git_bcommits,          { desc = "Telescope: buffer commits" })
+end
+ 
