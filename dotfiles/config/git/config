@@ -16,8 +16,14 @@
     rebase = false
 [color]
     ui = true
+[merge]
+    tool = p4merge
 [mergetool]
     keepBackup = false
+[mergetool "p4merge"]
+    path = p4merge
+    keepTemporaries = false
+    trustExitCode = false
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f

@@ -1,10 +1,16 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
 set APPS=^
+scoop-completion ^
 chatgpt ^
 rufus ^
 teraterm ^
-irfanview
+irfanview ^
+fzf ^
+ripgrep ^
+fd ^
+lsd ^
+zoxide
 
 REM obsidian ^
 REM etcher ^

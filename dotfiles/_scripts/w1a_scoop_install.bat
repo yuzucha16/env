@@ -4,9 +4,8 @@ set APPS=^
 windows-terminal ^
 pwsh ^
 PSReadLine ^
-universal-ctags ^
+autohotkey ^
 starship ^
-scoop-completion ^
 notepadplusplus ^
 doxygen ^
 plantuml ^
@@ -20,14 +19,9 @@ marp ^
 pdf-xchange-editor ^
 ghq ^
 fork ^
-sourcegit ^
-fzf ^
-ripgrep ^
-fd ^
+p4v ^
 which ^
-lsd ^
-broot ^
-zoxide
+broot 
 
 REM ======================================================
 REM  Scoop apps/buckets installer (User mode only)

@@ -1,16 +1,20 @@
 <NotepadPlus>
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" fifProjectPanel1="no" fifProjectPanel2="no" fifProjectPanel3="no" fifFilterFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no" bookmarkLine="no" purge="no" />
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" fifProjectPanel1="no" fifProjectPanel2="no" fifProjectPanel3="no" fifFilterFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no" bookmarkLine="no" purge="no">
+        <Path name="./" />
+        <Find name="tender" />
+        <Replace name="" />
+    </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\adv360-pro-zmk\config\adv360.keymap" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\dotfiles\scripts\w0_xdg_setup.bat" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\dotfiles\scripts\w1a_scoop_install.bat" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\dotfiles\scripts\w2a_copy_dotfiles.bat" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\w0_xdg_setup.bat" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\w1a_scoop_install.bat" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\w2a_copy_dotfiles.bat" />
         <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\l0a_apt_install.sh" />
         <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\l1_copy_dotfiles.sh" />
         <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\l0_setup.sh" />
+        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\vscode\keybindings.json" />
+        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\config\nvim-shared\colors.lua" />
+        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\vscode\settings.json" />
+        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\w2a_copy_dotfiles.bat" />
+        <File filename="C:\Users\kz\AppData\Roaming\Code\User\settings.json" />
+        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\vscode\extensions.txt" />
+        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\vscode\README.md" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -28,8 +32,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="yes" size="4" backspaceUnindent="no" />
-        <GUIConfig name="AppPosition" x="0" y="0" width="1024" height="700" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="0" top="0" right="0" bottom="0" isLessModeOn="no" />
+        <GUIConfig name="AppPosition" x="0" y="8" width="1316" height="1032" isMaximized="no" />
+        <GUIConfig name="FindWindowPosition" left="185" top="294" right="1132" bottom="820" isLessModeOn="no" />
         <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20250915" autoUpdateMode="1">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
@@ -71,6 +75,7 @@
         <GUIConfig name="DarkMode" enable="no" colorTone="0" customColorTop="2105376" customColorMenuHotTrack="4539717" customColorActive="3684408" customColorMain="2105376" customColorError="176" customColorText="14737632" customColorDarkText="12632256" customColorDisabledText="8421504" customColorLinkText="65535" customColorEdge="6579300" customColorHotEdge="10197915" customColorDisabledEdge="4737096" enableWindowsMode="no" darkThemeName="DarkModeDefault.xml" darkToolBarIconSet="0" darkTbFluentColor="0" darkTbFluentCustomColor="0" darkTbFluentMono="no" darkTabIconSet="2" darkTabUseTheme="no" lightThemeName="Zenburn.xml" lightToolBarIconSet="4" lightTbFluentColor="0" lightTbFluentCustomColor="13070080" lightTbFluentMono="no" lightTabIconSet="0" lightTabUseTheme="yes" />
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" isChangeHistoryEnabled="1" lineWrapMethod="aligned" currentLineIndicator="1" currentLineFrameWidth="1" virtualSpace="no" scrollBeyondLastLine="yes" rightClickKeepsSelection="no" selectedTextForegroundSingleColor="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="no" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="0" zoom2="0" whiteSpaceShow="hide" eolShow="hide" eolMode="1" npcShow="hide" npcMode="1" npcCustomColor="no" npcIncludeCcUniEOL="no" npcNoInputC0="yes" ccShow="yes" borderWidth="2" smoothFont="no" paddingLeft="0" paddingRight="0" distractionFreeDivPart="4" lineCopyCutWithoutSelection="yes" multiSelection="yes" columnSel2MultiEdit="yes" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="200">
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="-1" isVisible="yes" />
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
