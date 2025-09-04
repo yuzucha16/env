@@ -30,7 +30,9 @@ set "FILES[10]=home\.gitconfig|%USERPROFILE%\.gitconfig"
 set "FILES[11]=home\.gitignore_global|%USERPROFILE%\.gitignore_global"
 set "FILES[12]=vscode|%APPDATA%\Code\User"
 set "FILES[13]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
-set "MAX_IDX=13"
+set "FILES[14]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
+set "FILES[15]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
+set "MAX_IDX=15"
 
 REM            @("Microsoft.PowerShell_profile.ps1",   "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"),
 REM            @("profile.ps1",                        "$HOME\Documents\PowerShell\profile.ps1"),

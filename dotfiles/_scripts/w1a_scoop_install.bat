@@ -4,8 +4,10 @@ set APPS=^
 windows-terminal ^
 pwsh ^
 PSReadLine ^
+scoop-completion ^
 autohotkey ^
 starship ^
+nodejs ^
 notepadplusplus ^
 doxygen ^
 plantuml ^
