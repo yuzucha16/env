@@ -41,6 +41,15 @@ vim.o.tags = "tags;,"
 vim.keymap.set("n","<leader>qq", ":q<CR>")
 vim.keymap.set("n","<leader>ww", ":w<CR>")
 
+-- <leader>? で keymap 検索できるようにする
+vim.keymap.set("n", "<leader>?", function()
+  require("telescope.builtin").keymaps({
+    layout_strategy = "cursor",
+    layout_config = { width = 0.6, height = 0.6 },
+    lhs_width = 25,
+  })
+end, { desc = "Search keymaps (Telescope)" })
+
 -- GUI調整（Goneovim/Neovideなど）
 if vim.fn.has("gui_running") == 1 or vim.g.goneovim then
   vim.opt.guifont = "MyricaMMonospace Nerd Font:h9"
