@@ -5,7 +5,7 @@ IFS=$'\n\t'
 
 # ===== Settings (edit if needed) =====
 # 既定の場所（スクリプトの配置に依存しないように手動指定も可）
-SRC_DIR_DEFAULT="/mnt/c/Users/kz/vault/dev/src/github.com/yuzucha16/env/dotfiles"
+SRC_DIR_DEFAULT="/mnt/c/Users/kz/vault/github.com/yuzucha16/env/dotfiles"
 DST_DIR_DEFAULT="$HOME"
 
 # ===== CLI Options =====
@@ -70,7 +70,7 @@ echo "[INFO] Mode=$MODE  DryRun=$DRY_RUN"
 # ===== Prepare dirs =====
 mkdir -p "$DST_DIR/.config/git"
 mkdir -p "$DST_DIR/.config/nvim-wsl"
-mkdir -p "$DST_DIR/.config/nvim-wsl/lua/shared"
+mkdir -p "$DST_DIR/.config/nvim-wsl/lua"
 mkdir -p "$DST_DIR/.config/broot"
 mkdir -p "$DST_DIR/.config/pet"
 mkdir -p "$DST_DIR/.config"
@@ -130,7 +130,7 @@ CONFIG_DIR="$SRC_DIR/share"
 do_stow "$CONFIG_DIR" "$DST_DIR/.local/share/navi/cheats/denisidoro__cheats" "denisidoro__cheats"
 
 # NVIM common
-CONFIG_DIR="$SRC_DIR/config/nvim-win/lua"
-do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl/lua/shared" "shared"
+CONFIG_DIR="$SRC_DIR/config/nvim-win"
+do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl/lua"   "lua"
 
 echo "[DONE] stow ${MODE} completed."

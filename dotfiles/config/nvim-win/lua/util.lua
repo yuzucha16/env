@@ -377,4 +377,6 @@ function M.setup_all()
   setup_autocmds()
 end
 
+M.setup_telescope = setup_telescope
+
 return M
