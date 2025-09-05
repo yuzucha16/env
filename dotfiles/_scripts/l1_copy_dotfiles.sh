@@ -117,16 +117,20 @@ do_stow() {
 # ルート直下の home パッケージ（~ 配下）
 do_stow "$SRC_DIR" "$DST_DIR" "home"
 
-# XDG_CONFIG_HOME 配下のパッケージ群
+# XDG_CONFIG_HOME
 CONFIG_DIR="$SRC_DIR/config"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/broot"               "broot"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/git"                 "git"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl"            "nvim-wsl"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/pet"                 "pet"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config"                     "starship"
-do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl/lua/shared" "nvim-shared"
 
+# XDG_LOCAL_HOME
 CONFIG_DIR="$SRC_DIR/share"
 do_stow "$CONFIG_DIR" "$DST_DIR/.local/share/navi/cheats/denisidoro__cheats" "denisidoro__cheats"
+
+# NVIM common
+CONFIG_DIR="$SRC_DIR/config/nvim-win/lua"
+do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl/lua/shared" "shared"
 
 echo "[DONE] stow ${MODE} completed."
