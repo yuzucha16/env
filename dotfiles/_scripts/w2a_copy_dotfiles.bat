@@ -23,16 +23,17 @@ set "FILES[3]=notepadpp\stylers.xml|%USERPROFILE%\scoop\apps\notepadplusplus\cur
 set "FILES[4]=startup.bat|%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\startup.bat"
 set "FILES[5]=settings.json|%USERPROFILE%\scoop\apps\windows-terminal\current\settings\settings.json"
 set "FILES[6]=config\git\config|%USERPROFILE%\.config\git\config"
-set "FILES[7]=config\nvim-win|%USERPROFILE%\.config\nvim-win"
-set "FILES[8]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
-set "FILES[9]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
-set "FILES[10]=home\.gitconfig|%USERPROFILE%\.gitconfig"
-set "FILES[11]=home\.gitignore_global|%USERPROFILE%\.gitignore_global"
-set "FILES[12]=vscode|%APPDATA%\Code\User"
-set "FILES[13]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
-set "FILES[14]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
-set "FILES[15]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
-set "FILES[16]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml
+set "FILES[7]=home\.gitconfig|%USERPROFILE%\.gitconfig"
+set "FILES[8]=home\.gitignore_global|%USERPROFILE%\.gitignore_global"
+set "FILES[9]=config\nvim-win|%USERPROFILE%\.config\nvim-win"
+set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
+set "FILES[11]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml
+set "FILES[12]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
+set "FILES[13]=vscode|%APPDATA%\Code\User"
+set "FILES[14]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
+set "FILES[15]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
+set "FILES[16]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
+
 set "MAX_IDX=16
 
 REM            @("config",		               	       "$Home\.config\bat\config"),
