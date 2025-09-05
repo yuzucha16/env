@@ -10,8 +10,8 @@ util.lazy_setup({
   { "preservim/tagbar" },
   
   -- ショートカットヒント
-  { "folke/which-key.nvim", event = "VeryLazy", version = false},
-  { "echasnovski/mini.icons", version = false },
+  --{ "folke/which-key.nvim", event = "VeryLazy", version = false},
+  --{ "echasnovski/mini.icons", version = false },
   
   -- Telescope（ビルド不要構成）
   { "nvim-telescope/telescope.nvim", version = false, dependencies = { "nvim-lua/plenary.nvim" } },
@@ -29,30 +29,12 @@ util.lazy_setup({
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 
   -- Terminal
-  {
-    "akinsho/toggleterm.nvim",
-    version = "*",
-    config = function()
-      require("toggleterm").setup({
-        shell = "pwsh.exe",  -- "powershell.exe" でもOK
-        direction = "float",
-      })
-      vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
-    end,
-  },
+  { "akinsho/toggleterm.nvim", version = "*" },
 
   -- Markdown live preview
   {
     "brianhuster/live-preview.nvim",
     ft = { "markdown", "html", "asciidoc", "svg" },
-    opts = {
-      browser_cmd = "msedge --new-tab",
-      port = 8080,
-    },
-    keys = {
-      { "<leader>ms", "<cmd>LivePreview start<CR>", desc = "Markdown Live Preview" },
-      { "<leader>mc", "<cmd>LivePreview close<CR>", desc = "HTML Live Preview" },
-    },
   },
 
   -- Colors

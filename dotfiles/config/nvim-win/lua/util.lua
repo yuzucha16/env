@@ -219,13 +219,13 @@ local function setup_whichkey()
 
   -- ── グループ見出し（<leader>配下） ──────────────────────────────
   wk.add({
-    { "<leader>f", group = "file / telescope" },
-    { "<leader>g", group = "git" },
-    { "<leader>l", group = "lsp" },
-    { "<leader>b", group = "buffer" },
-    { "<leader>w", group = "window" },
-    { "<leader>q", group = "session/quit" },
-    { "<leader>t", group = "telescope" },
+    --{ "<leader>f", group = "file / telescope" },
+    --{ "<leader>g", group = "git" },
+    --{ "<leader>l", group = "lsp" },
+    --{ "<leader>b", group = "buffer" },
+    --{ "<leader>w", group = "window" },
+    --{ "<leader>q", group = "session/quit" },
+    --{ "<leader>t", group = "telescope" },
   })
 
   -- ── Telescope: 代表的なキー（desc 付きだから which-key に出る） ──
@@ -274,6 +274,32 @@ local function setup_whichkey()
       bmap("]d",        vim.diagnostic.goto_next,       "Next diagnostic")
     end,
   })
+end
+
+local function setup_toggleterm()
+  require("toggleterm").setup({
+    shell = "pwsh.exe",  -- "powershell.exe" でもOK
+    direction = "float",
+  })
+  
+  vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
+end
+
+local function setup_livepreview()
+  local ok, lp = pcall(require, "live-preview")
+  if not ok then
+    -- ここで設定しない。必要なら通知だけ出す:
+    -- vim.schedule(function()
+    --   vim.notify("live-preview not loaded yet; skipping setup", vim.log.levels.DEBUG)
+    -- end)
+    return
+  end
+  lp.setup({
+    browser = { cmd = "msedge", args = { "--new-tab" } },
+    server  = { port = 8765, check_port = false },  --8080,
+  })
+  vim.keymap.set("n", "<leader>ms", "<cmd>LivePreview start<CR>", { desc = "Markdown Live Preview", silent = true })
+  vim.keymap.set("n", "<leader>mc", "<cmd>LivePreview close<CR>", { desc = "HTML Live Preview", silent = true })
 end
 
 ----------------------------------------------------------------
@@ -419,7 +445,9 @@ function M.setup_all()
   setup_telescope()
 
   -- “押した時だけ薄くヒント”
-  setup_whichkey()
+  setup_toggleterm()
+  setup_livepreview()
+  --setup_whichkey()
 
   -- UI拡張
   setup_ui_bufferline()
