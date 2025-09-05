@@ -1,6 +1,6 @@
 [Editor]
 FontFamily        = "HackGen Console NF"
-FontSize          = 14
+FontSize          = 12
 LineHeight        = 1.15
 Ligatures         = true           # 合字（Cascadia/JetBrains なら OK）
 SmoothScroll      = true
@@ -59,7 +59,7 @@ ExtWildmenu       = true
 ExtLinegrid       = true           # ほぼ必須
 
 [Workspace]
-RestoreSession    = true           # 前回のバッファ/タブを復元
+RestoreSession    = false          # 前回のバッファ/タブを復元
 AutoChdir         = false
 
 [Log]
