@@ -4,9 +4,11 @@ set APPS=^
 windows-terminal ^
 pwsh ^
 PSReadLine ^
+nu ^
 scoop-completion ^
 autohotkey ^
 starship ^
+nodejs ^
 notepadplusplus ^
 neovim ^
 goneovim ^
