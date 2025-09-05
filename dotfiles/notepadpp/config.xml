@@ -18,7 +18,7 @@
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="yes" size="2" backspaceUnindent="no" />
         <GUIConfig name="AppPosition" x="0" y="0" width="1280" height="1024" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="791" top="734" right="1738" bottom="1260" isLessModeOn="no" />
+        <GUIConfig name="FindWindowPosition" left="900" top="700" right="1700" bottom="1260" isLessModeOn="no" />
         <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20250915" autoUpdateMode="1">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
