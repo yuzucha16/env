@@ -32,10 +32,9 @@ set "FILES[12]=vscode|%APPDATA%\Code\User"
 set "FILES[13]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
 set "FILES[14]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
 set "FILES[15]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
-set "MAX_IDX=15"
+set "FILES[16]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml
+set "MAX_IDX=16
 
-REM            @("Microsoft.PowerShell_profile.ps1",   "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"),
-REM            @("profile.ps1",                        "$HOME\Documents\PowerShell\profile.ps1"),
 REM            @("config",		               	       "$Home\.config\bat\config"),
 REM            @(".vimrc",                             "$Home\.vimrc"),
 

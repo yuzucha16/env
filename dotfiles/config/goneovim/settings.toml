@@ -1,0 +1,42 @@
+# === Editor 基本設定 ===
+[Editor]
+FontFamily   = "HackGen Console NF"
+#FontSize     = 14
+#LineHeight   = 1.2
+Transparent  = 0.95        # ウィンドウ透過（0.0=透明〜1.0=不透明）
+SmoothScroll = true        # スクロールを滑らかに
+Ligatures    = true        # フォントの合字を有効にする
+Clipboard    = true        # OSクリップボードと連携
+BorderlessWindow = false   # 枠なしを無効化（＝OS標準の枠に戻す）
+HideTitlebar     = false   # タイトルバー非表示を無効化
+
+# === Neovim 側の挙動 ===
+[Neovim]
+Path    = "nvim"           # Neovim 実行ファイルのパス（PATHが通っていればこれでOK）
+Args    = ["--cmd", "set guicursor=a:blinkon0"] # GUI用オプション
+ExtPopupmenu  = true       # pum をGUIで描画
+ExtTabline    = true
+ExtCmdline    = true
+ExtMessages   = true
+ExtMultigrid  = true       # 分割描画でチラつき減少
+
+# === コマンドパレット ===
+[Palette]
+FontSize    = 13
+Transparent = 0.95
+MaxHeight   = 20
+
+# === メッセージ/通知 ===
+[Message]
+FontSize    = 13
+Transparent = 0.95
+
+# === タブライン ===
+[Tabline]
+Visible = true
+Style   = "slim"          # "full", "light", "slim" など
+
+# === スクロールバー ===
+[Scrollbar]
+Visible = true
+Width   = 6
