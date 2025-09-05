@@ -5,6 +5,7 @@
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "live-preview.nvim": { "branch": "main", "commit": "5890c4f7cb81a432fd5f3b960167757f1b4d4702" },
   "lualine.nvim": { "branch": "master", "commit": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955" },
+  "mini.icons": { "branch": "main", "commit": "f9a177c11daa7829389b7b6eaaec8b8a5c47052d" },
   "nvim-web-devicons": { "branch": "master", "commit": "f66cdfef5e84112045b9ebc3119fee9bddb3c687" },
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
   "tagbar": { "branch": "master", "commit": "2ef4ecba94440fcf8a8c692a0f2b36b332f1f0f2" },
@@ -12,5 +13,6 @@
   "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
   "tender.vim": { "branch": "master", "commit": "b66dc330aff998dff9d44459d84bc1c5f4304fcc" },
   "toggleterm.nvim": { "branch": "main", "commit": "9a88eae817ef395952e08650b3283726786fb5fb" },
-  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" }
+  "vim-gutentags": { "branch": "master", "commit": "aa47c5e29c37c52176c44e61c780032dfacef3dd" },
+  "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }
 }

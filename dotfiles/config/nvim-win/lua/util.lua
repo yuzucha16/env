@@ -189,33 +189,90 @@ end
 
 
 ----------------------------------------------------------------
--- 5. mini.clue（押した時だけ薄くヒント）
+-- 5. whick key（押した時だけ薄くヒント）
 ----------------------------------------------------------------
-local function setup_mini_clue()
-  local clue = prequire("mini.clue")
-  if not clue then return end
+-- お好みで使える薄いラッパ（desc 付き）
+local function nmap(lhs, rhs, desc, opts)
+  opts = opts or {}
+  opts.desc = desc
+  opts.silent = opts.silent ~= false
+  opts.noremap = opts.noremap ~= false
+  vim.keymap.set("n", lhs, rhs, opts)
+end
 
-  clue.setup({
-    window = { delay = 200, config = { border = "rounded", width = 0.35 } },
-    triggers = {
-      { mode = "n", keys = "<Leader>" },
-      { mode = "n", keys = "g" },
-      { mode = "n", keys = "[" }, { mode = "n", keys = "]" },
-    },
-    clues = {
-      clue.gen_clues.g(),
-      clue.gen_clues.marks(),
-      clue.gen_clues.registers(),
-      clue.gen_clues.windows(),
-      clue.gen_clues.z(),
+local function setup_whichkey()
+  -- which-key が無ければ何もしない
+  local ok, wk = pcall(require, "which-key")
+  if not ok then return end
 
-      -- Git系（慣れたら削る運用）
-      { mode = "n", keys = "<leader>g", postkeys = "a", desc = "Git add hunk" },
-      { mode = "n", keys = "<leader>g", postkeys = "c", desc = "Git commit" },
-      { mode = "n", keys = "<leader>g", postkeys = "P", desc = "Git push" },
-      { mode = "n", keys = "<leader>g", postkeys = "s", desc = "Git switch" },
-      { mode = "n", keys = "<leader>g", postkeys = "d", desc = "Git diff"  },
+  wk.setup({
+    plugins = {
+      marks = true,
+      registers = true,
+      spelling = { enabled = true, suggestions = 20 },
+      presets = { operators = false, motions = false, text_objects = false },
     },
+    win = { border = "rounded" },
+    layout = { align = "center" },
+    show_help = false,
+  })
+
+  -- ── グループ見出し（<leader>配下） ──────────────────────────────
+  wk.add({
+    { "<leader>f", group = "file / telescope" },
+    { "<leader>g", group = "git" },
+    { "<leader>l", group = "lsp" },
+    { "<leader>b", group = "buffer" },
+    { "<leader>w", group = "window" },
+    { "<leader>q", group = "session/quit" },
+    { "<leader>t", group = "telescope" },
+  })
+
+  -- ── Telescope: 代表的なキー（desc 付きだから which-key に出る） ──
+  local has_telescope, _ = pcall(require, "telescope")
+  if has_telescope then
+    nmap("<leader>ff", "<cmd>Telescope find_files<CR>", "Find files")
+    nmap("<leader>fg", "<cmd>Telescope live_grep<CR>",  "Live grep")
+    nmap("<leader>fb", "<cmd>Telescope buffers<CR>",    "Buffers")
+    nmap("<leader>fh", "<cmd>Telescope help_tags<CR>",  "Help tags")
+    -- t配下にも置きたい場合（好みで）
+    nmap("<leader>tp", "<cmd>Telescope projects<CR>",   "Projects")
+  end
+
+  -- ── Git（gitsigns があれば活かす／無くても落ちない） ───────────
+  -- 「gs が nil」問題を避けるため、直接呼び出し関数でラップ
+  nmap("]h", function() pcall(function() require("gitsigns").next_hunk() end) end, "Next hunk")
+  nmap("[h", function() pcall(function() require("gitsigns").prev_hunk() end) end, "Prev hunk")
+  nmap("<leader>gs", function() pcall(function() require("gitsigns").stage_hunk() end) end, "Stage hunk")
+  nmap("<leader>gr", function() pcall(function() require("gitsigns").reset_hunk() end) end, "Reset hunk")
+  nmap("<leader>gp", function() pcall(function() require("gitsigns").preview_hunk() end) end, "Preview hunk")
+  nmap("<leader>gb", function() pcall(function() require("gitsigns").blame_line({ full = true }) end) end, "Blame line")
+  -- fugitive 等を使うなら（インストール済み前提ならアンコメント）
+  -- nmap("<leader>gg", "<cmd>Git<CR>", "Git status")
+
+  -- ── LSP: LspAttach でバッファローカルに desc 付き割当 ──────────
+  vim.api.nvim_create_autocmd("LspAttach", {
+    group = vim.api.nvim_create_augroup("UserLspKeymaps", { clear = true }),
+    callback = function(args)
+      local buf = args.buf
+      local function bmap(lhs, rhs, desc)
+        vim.keymap.set("n", lhs, rhs, { buffer = buf, silent = true, desc = desc })
+      end
+
+      bmap("<leader>ld", vim.lsp.buf.definition,        "Definition")
+      bmap("<leader>lD", vim.lsp.buf.declaration,       "Declaration")
+      bmap("<leader>lr", vim.lsp.buf.references,        "References")
+      bmap("<leader>li", vim.lsp.buf.implementation,    "Implementation")
+      bmap("<leader>lt", vim.lsp.buf.type_definition,   "Type definition")
+      bmap("<leader>lh", vim.lsp.buf.hover,             "Hover")
+      bmap("<leader>ls", vim.lsp.buf.signature_help,    "Signature help")
+      bmap("<leader>la", vim.lsp.buf.code_action,       "Code action")
+      bmap("<leader>ln", vim.lsp.buf.rename,            "Rename")
+      bmap("<leader>lf", function() vim.lsp.buf.format({ async = true }) end, "Format")
+      bmap("<leader>le", vim.diagnostic.open_float,     "Line diagnostics")
+      bmap("[d",        vim.diagnostic.goto_prev,       "Prev diagnostic")
+      bmap("]d",        vim.diagnostic.goto_next,       "Next diagnostic")
+    end,
   })
 end
 
@@ -361,8 +418,8 @@ function M.setup_all()
   -- Telescope & キーマップ検索
   setup_telescope()
 
-  -- “押した時だけ薄くヒント”（mini.clue）
-  setup_mini_clue()
+  -- “押した時だけ薄くヒント”
+  setup_whichkey()
 
   -- UI拡張
   setup_ui_bufferline()

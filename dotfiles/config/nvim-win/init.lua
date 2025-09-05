@@ -8,7 +8,11 @@ util.lazy_bootstrap()
 util.lazy_setup({
   { "nvim-lua/plenary.nvim" },
   { "preservim/tagbar" },
-
+  
+  -- ショートカットヒント
+  { "folke/which-key.nvim", event = "VeryLazy", version = false},
+  { "echasnovski/mini.icons", version = false },
+  
   -- Telescope（ビルド不要構成）
   { "nvim-telescope/telescope.nvim", version = false, dependencies = { "nvim-lua/plenary.nvim" } },
   { "nvim-telescope/telescope-file-browser.nvim",
