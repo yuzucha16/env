@@ -50,7 +50,7 @@
                 "face": "HackGen Console NF"
             },
             "startingDirectory": "%VAULT_HOME%",
-            "opacity": 92
+            "opacity": 100
         },
         "list": 
         [

@@ -1,42 +1,62 @@
 # === Editor 基本設定 ===
 [Editor]
-FontFamily   = "HackGen Console NF"
-#FontSize     = 14
-#LineHeight   = 1.2
-Transparent  = 0.95        # ウィンドウ透過（0.0=透明〜1.0=不透明）
-SmoothScroll = true        # スクロールを滑らかに
-Ligatures    = true        # フォントの合字を有効にする
-Clipboard    = true        # OSクリップボードと連携
-BorderlessWindow = false   # 枠なしを無効化（＝OS標準の枠に戻す）
-HideTitlebar     = false   # タイトルバー非表示を無効化
+# フォントは DirectWrite と相性の良い等幅を。Cascadia Code or JetBrains Mono が無難
+FontFamily        = "HackGen Console NF"
+FontSize          = 14
+LineHeight        = 1.15
+Ligatures         = true           # 合字（Cascadia/JetBrains なら OK）
+SmoothScroll      = true
+Clipboard         = true           # Win のクリップボード連携
+CursorSmoothMove  = false          # 体感差は小、切ると軽くなる
+RenderItalic      = true
+RenderBold        = true
+
+# 透過やぼかしは見栄えは良いが GPU/描画トラブルの温床なので常用はオフ
+Transparent       = 1.0            # 1.0 = 不透明（安定）
+Blur              = false
+
+# === ウィンドウ/タイトルバー ===
+BorderlessWindow  = false          # 標準枠を使う（Win11 スナップ/最大化/タスクバー連携が安定）
+HideTitlebar      = false          # 同上。Win + ←/→ のスナップが利かない時の定番原因
+RememberWindowPos = true           # 前回位置・サイズを復元
+SnapResize        = true           # リサイズでカクつく時は false も試す
+
+# タブ/分割の見た目（お好みだが軽め設定）
+ShowTabline       = true
+ShowStatusline    = true
+Scrollbar         = "minimal"      # "none" も可
+
+# === 描画/パフォーマンス ===
+TargetFPS         = 60             # 高すぎると無駄、60〜144で
+DisableVSync      = false          # 画面裂けが出るなら false
+CacheDraw         = true           # 文字キャッシュで軽量化
+EmojiRender       = false          # 絵文字描画を切ると軽くなる
+
+# === 入力/IME ===
+UseIME            = true           # 日本語 IME
+ImeInline         = true           # 行内候補。お好みで
+# ImeFontFamily   = "Yu Gothic UI" # 候補表示を変えたいとき
 
 # === Neovim 側の挙動 ===
 [Neovim]
-Path    = "nvim"           # Neovim 実行ファイルのパス（PATHが通っていればこれでOK）
-Args    = ["--cmd", "set guicursor=a:blinkon0"] # GUI用オプション
-ExtPopupmenu  = true       # pum をGUIで描画
-ExtTabline    = true
-ExtCmdline    = true
-ExtMessages   = true
-ExtMultigrid  = true       # 分割描画でチラつき減少
+# nvim.exe へのフルパスを明示（PATH 汚染の影響を避ける）
+Path              = "nvim.exe"
+# 起動引数（軽快重視：最小プラグイン起動に切り替えるテストにも使える）
+# Args            = ["-u", "NONE", "--clean"]
 
-# === コマンドパレット ===
-[Palette]
-FontSize    = 13
-Transparent = 0.95
-MaxHeight   = 20
+# Neovim の UI 拡張（Goneovim は ext_* をネイティブ実装）
+ExtPopupmenu      = true
+ExtCmdline        = true
+ExtMessages       = true
+ExtTabline        = true
+ExtWildmenu       = true
+ExtLinegrid       = true           # ほぼ必須
 
-# === メッセージ/通知 ===
-[Message]
-FontSize    = 13
-Transparent = 0.95
+# === 作業ディレクトリ/セッション ===
+[Workspace]
+RestoreSession    = true           # 前回のバッファ/タブを復元
+AutoChdir         = false
 
-# === タブライン ===
-[Tabline]
-Visible = true
-Style   = "slim"          # "full", "light", "slim" など
-
-# === スクロールバー ===
-[Scrollbar]
-Visible = true
-Width   = 6
+# === ログ（トラブル時だけ） ===
+[Log]
+Level             = "error"        # "debug" は重いので常用しない
