@@ -7,7 +7,7 @@ set "XDG_CACHE_HOME=%USERPROFILE%\.cache"
 set "XDG_DATA_HOME=%USERPROFILE%\.local\share"
 set "XDG_STATE_HOME=%USERPROFILE%\.local\state"
 set "VAULT_HOME=%USERPROFILE%\vault"
-set "GHQ_ROOT=%USERPROFILE%\vault\dev\src"
+set "GHQ_ROOT=%USERPROFILE%\vault"
 set "NVIM_APPNAME=nvim-win"
 
 REM 永続化するために setx を使う (User スコープ)
