@@ -1,21 +1,7 @@
 <NotepadPlus>
     <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" fifProjectPanel1="no" fifProjectPanel2="no" fifProjectPanel3="no" fifFilterFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no" bookmarkLine="no" purge="no">
-        <Path name="./" />
-        <Filter name="" />
-        <Find name="lf" />
-        <Find name="unix" />
-        <Find name="nvim-" />
-        <Find name="Editor" />
-        <Find name=".markdown-body" />
-        <Find name="tender" />
-        <Replace name="body" />
     </FindHistory>
-    <History nbMaxFile="5" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\settings.json" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\_scripts\w2a_copy_dotfiles.bat" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\env\dotfiles\config\git\config" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\dotfiles\.gitignore" />
-        <File filename="C:\Users\kz\vault\dev\src\github.com\yuzucha16\dotfiles\.config\git\config" />
+    <History nbMaxFile="10" inSubMenu="no" customLength="-1">
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -33,7 +19,7 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="yes" size="2" backspaceUnindent="no" />
-        <GUIConfig name="AppPosition" x="57" y="36" width="1104" height="1032" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="0" y="0" width="960" height="1024" isMaximized="no" />
         <GUIConfig name="FindWindowPosition" left="791" top="734" right="1738" bottom="1260" isLessModeOn="no" />
         <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20250915" autoUpdateMode="1">no</GUIConfig>
