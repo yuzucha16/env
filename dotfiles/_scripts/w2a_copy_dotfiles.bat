@@ -36,7 +36,11 @@ set "FILES[16]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShe
 set "FILES[17]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
 set "FILES[18]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\config.nu
 set "FILES[19]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\env.nu
-set "MAX_IDX=19
+set "FILES[20]=xyplorer\XYplorer.ini|%APPDATA%\XYplorer\XYplorer.ini
+set "FILES[21]=xyplorer\tag.dat|%APPDATA%\XYplorer\tag.dat
+set "FILES[22]=xyplorer\ks.dat|%APPDATA%\XYplorer\ks.dat
+set "FILES[23]=xyplorer\catalog.dat|%APPDATA%\XYplorer\Catalogs\catalog.dat
+set "MAX_IDX=23
 
 rem set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
 REM            @("config",		               	       "$Home\.config\bat\config"),
