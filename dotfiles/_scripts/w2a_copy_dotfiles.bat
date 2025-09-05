@@ -26,16 +26,15 @@ set "FILES[6]=config\git\config|%USERPROFILE%\.config\git\config"
 set "FILES[7]=home\.gitconfig|%USERPROFILE%\.gitconfig"
 set "FILES[8]=home\.gitignore_global|%USERPROFILE%\.gitignore_global"
 set "FILES[9]=config\nvim-win|%USERPROFILE%\.config\nvim-win"
-set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
-set "FILES[11]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml
-set "FILES[12]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
-set "FILES[13]=vscode|%APPDATA%\Code\User"
-set "FILES[14]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
-set "FILES[15]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
-set "FILES[16]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
+set "FILES[10]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml
+set "FILES[11]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
+set "FILES[12]=vscode|%APPDATA%\Code\User"
+set "FILES[13]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
+set "FILES[14]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
+set "FILES[15]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
+set "MAX_IDX=15
 
-set "MAX_IDX=16
-
+rem set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
 REM            @("config",		               	       "$Home\.config\bat\config"),
 REM            @(".vimrc",                             "$Home\.vimrc"),
 
