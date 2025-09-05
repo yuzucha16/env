@@ -285,23 +285,6 @@ local function setup_toggleterm()
   vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
 end
 
-local function setup_livepreview()
-  local ok, lp = pcall(require, "live-preview")
-  if not ok then
-    -- ここで設定しない。必要なら通知だけ出す:
-    -- vim.schedule(function()
-    --   vim.notify("live-preview not loaded yet; skipping setup", vim.log.levels.DEBUG)
-    -- end)
-    return
-  end
-  lp.setup({
-    browser = { cmd = "msedge", args = { "--new-tab" } },
-    server  = { port = 8765, check_port = false },  --8080,
-  })
-  vim.keymap.set("n", "<leader>ms", "<cmd>LivePreview start<CR>", { desc = "Markdown Live Preview", silent = true })
-  vim.keymap.set("n", "<leader>mc", "<cmd>LivePreview close<CR>", { desc = "HTML Live Preview", silent = true })
-end
-
 ----------------------------------------------------------------
 -- 6. LSP（必要ならここに集約）
 ----------------------------------------------------------------
@@ -446,7 +429,6 @@ function M.setup_all()
 
   -- “押した時だけ薄くヒント”
   setup_toggleterm()
-  setup_livepreview()
   --setup_whichkey()
 
   -- UI拡張

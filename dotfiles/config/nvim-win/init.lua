@@ -33,8 +33,12 @@ util.lazy_setup({
 
   -- Markdown live preview
   {
-    "brianhuster/live-preview.nvim",
-    ft = { "markdown", "html", "asciidoc", "svg" },
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()  -- Node.jsでバックエンドをインストール
+    end,
   },
 
   -- Colors
@@ -43,21 +47,29 @@ util.lazy_setup({
   { "sainnhe/gruvbox-material",    lazy = false }, -- ← util.setup_colors() で即適用するので eager
 })
 
--- 3) 追加キーマップ（Tagbar / ctags）
-vim.keymap.set("n","<F8>", ":TagbarToggle<CR>", { silent = true, desc = "Tagbar Toggle" })
-vim.keymap.set("n","gD",  ":tselect <C-r><C-w><CR>", { silent = true, desc = "Tag select (ctags)" })
-
--- 4) Markdown style（そのまま）
-local root = os.getenv("GHQ_ROOT")
-local screen_css = root .. "/github.com/jasonm23/markdown-css-themes/screen.css"
-local aaa_css    = root .. "/github.com/pxlrbt/markdown-css/markdown.css"
-vim.g.mkdp_markdown_css = "C:/Users/kz/vault/dev/src/github.com/jasonm23/markdown-css-themes/screen.css"
--- vim.g.mkdp_markdown_css = screen_css
-
 -- 5) プラグイン初期化が一段落したタイミングで “一発ロード”
 vim.api.nvim_create_autocmd("User", {
   pattern = "VeryLazy",
   callback = function()
     util.setup_all()
+    
+    -- Tagbar / ctags
+    vim.keymap.set("n","<F8>", ":TagbarToggle<CR>", { silent = true, desc = "Tagbar Toggle" })
+    vim.keymap.set("n","gD",  ":tselect <C-r><C-w><CR>", { silent = true, desc = "Tag select (ctags)" })
+
+    -- Markdown
+    vim.keymap.set("n", "<leader>ms", "<cmd>MarkdownPreview<CR>", { desc = "Markdown Preview Start" })
+    vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Markdown Preview" })
+    vim.keymap.set("n", "<leader>mx", "<cmd>MarkdownPreviewStop<CR>", { desc = "Markdown Preview Stop" })
+  
+    -- 4) Markdown style
+    vim.g.mkdp_browser = "msedge"        -- ブラウザ指定（chrome, edge など）
+    vim.g.mkdp_open_ip = "127.0.0.1"
+    vim.g.mkdp_echo_preview_url = 1      -- URLをエコー出力 (コピーして他環境で開ける)
+
+    local root = os.getenv("GHQ_ROOT")
+    local screen_css= root .. "/github.com/jasonm23/markdown-css-themes/screen.css"
+    local aaa_css   = root .. "/github.com/pxlrbt/markdown-css/markdown.css"
+    vim.g.mkdp_markdown_css = aaa_css
   end,
 })
