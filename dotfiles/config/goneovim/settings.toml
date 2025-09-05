@@ -1,6 +1,4 @@
-# === Editor 基本設定 ===
 [Editor]
-# フォントは DirectWrite と相性の良い等幅を。Cascadia Code or JetBrains Mono が無難
 FontFamily        = "HackGen Console NF"
 FontSize          = 14
 LineHeight        = 1.15
@@ -11,6 +9,8 @@ CursorSmoothMove  = false          # 体感差は小、切ると軽くなる
 RenderItalic      = true
 RenderBold        = true
 
+StartMaximizedWindow = false
+RestoreWindowGeometry = false
 WindowX = 960        # ウィンドウの初期位置（左上座標、単位はピクセル）
 WindowY = 0
 WindowWidth  = 960   # ウィンドウの初期サイズ（単位はピクセル）

@@ -7,12 +7,7 @@ PSReadLine ^
 scoop-completion ^
 autohotkey ^
 starship ^
-nodejs ^
 notepadplusplus ^
-doxygen ^
-plantuml ^
-graphviz ^
-vscode ^
 neovim ^
 goneovim ^
 winmerge ^
@@ -24,6 +19,11 @@ fork ^
 p4v ^
 which ^
 broot 
+
+rem vscode ^
+rem doxygen ^
+rem plantuml ^
+rem graphviz ^
 
 REM ======================================================
 REM  Scoop apps/buckets installer (User mode only)
