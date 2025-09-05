@@ -32,7 +32,9 @@ set "FILES[12]=vscode|%APPDATA%\Code\User"
 set "FILES[13]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk
 set "FILES[14]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1
 set "FILES[15]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1
-set "MAX_IDX=15
+set "FILES[16]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\config.nu
+set "FILES[17]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\env.nu
+set "MAX_IDX=17
 
 rem set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
 REM            @("config",		               	       "$Home\.config\bat\config"),
