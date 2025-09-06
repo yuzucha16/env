@@ -43,11 +43,11 @@ sudo apt autoremove -y
 sudo apt clean
 
 # Go application
-go install github.com/x-motemen/ghq@latest
-go install github.com/knqyf263/pet@latest
+/usr/local/go/bin/go install github.com/x-motemen/ghq@latest
+/usr/local/go/bin/go install github.com/knqyf263/pet@latest
 
 # Rust application
-cargo install broot lsd navi tealdeer
+$HOME/.cargo/bin/cargo install broot lsd navi tealdeer
 tldr --update
 
 echo "[*] Install complete!"

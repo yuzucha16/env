@@ -11,15 +11,19 @@
 - Assistant dellをインストールする
 
 - タスクバー設定を行う
-	- 左に寄せる，隠す，アイテムを減らす
+	- 左に寄せる，アイテムを減らす
 	
 - コントロールパネル
 	- カンマ/ピリオド，半角スペース，IME:履歴オフ，マウスサイズ
+	- エクスプローラー
+	  - 最近使用したファイルを表示する：チェック外す
+	  - 頻繁に使用されるフォルダーを表示する：チェック外す
+	  - 拡張子，隠しファイル
 	- win + Rの履歴登録
-		- control
-		- sysdm.cpl
-		- devmgmt.msc
-		- shell:startup
+	  - control
+	  - sysdm.cpl
+	  - devmgmt.msc
+	  - shell:startup
 
 ## 手順
 
@@ -29,17 +33,24 @@
 
 - ghq get yuzucha16/env でオリジナルをcloneする
 
+  ```shell
+  git fetch
+  git switch 202509
+  ```
+
 - Power shellスクリプトの実行ポリシーを変更する
 
   - Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
   - Set-ExecutionPolicy RemoteSigned -Scope Process -Force
   - Get-ExecutionPolicy -List
 
-- downloadしたyuzucha16/envを削除する
-
 - scoopで入らないアプリをインストールする
 
-- cloneしたリポジトリのdotfiles/_script/w2(管理者権限)から再開する
+- downloadしたyuzucha16/envを削除する
+
+- フォントをインストールする
+
+- ghq(clone)したリポジトリのdotfiles/_script/w2(管理者権限)から再開する
 
 - wslをセットアップする
 
@@ -50,12 +61,14 @@
   sudo chmod +x ./l2_init_workspace.sh
   ./l0_setup.sh
   ./l0a_apt_install.sh
+  unlink ~/.bash_logout
+  unlink ~/.bashrc
+  unlink ~/.profile
   ./l1_copy_dotfiles.sh
   ./l2_init_workspace.sh
-  
   ```
 
-  
+- `shell:startup` にショートカットをおく
 
 ## アプリ
 
