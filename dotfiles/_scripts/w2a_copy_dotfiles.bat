@@ -38,7 +38,8 @@ set "FILES[18]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\config.nu
 set "FILES[19]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\env.nu
 set "FILES[20]=xyplorer|%VAULT_HOME%\tool\xyplorer_full_noinstall\Data
 set "FILES[21]=typora\conf.user.json|%APPDATA%\Typora\conf\conf.user.json
-set "MAX_IDX=21
+set "FILES[22]=typora\themes|%APPDATA%\Typora\themes
+set "MAX_IDX=22
 
 rem set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
 REM            @("config",		               	       "$Home\.config\bat\config"),
