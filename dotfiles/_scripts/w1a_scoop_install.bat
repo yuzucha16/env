@@ -4,6 +4,7 @@ set APPS=^
 windows-terminal ^
 pwsh ^
 PSReadLine ^
+psfzf ^
 nu ^
 scoop-completion ^
 autohotkey ^
@@ -32,6 +33,7 @@ zoxide ^
 fzf ^
 ripgrep ^
 fd ^
+bat ^
 sudo
 
 rem vscode ^
