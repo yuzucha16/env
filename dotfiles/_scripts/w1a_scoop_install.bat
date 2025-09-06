@@ -8,10 +8,8 @@ nu ^
 scoop-completion ^
 autohotkey ^
 starship ^
-nodejs ^
 notepadplusplus ^
-neovim ^
-goneovim ^
+vscode ^
 winmerge ^
 teraterm ^
 irfanview ^
@@ -22,24 +20,27 @@ ghq ^
 fork ^
 p4v ^
 which ^
-lsd ^
-broot ^
-zoxide ^
-fzf ^
-psfzf ^
-ripgrep ^
-fd ^
-bat ^
 sudo
 
+rem neovim ^
+rem goneovim ^
 rem clangd ^
 rem llvm ^
 rem cmake ^
 rem ninja ^
+rem nodejs ^
 rem vscode ^
 rem doxygen ^
 rem plantuml ^
 rem graphviz ^
+rem lsd ^
+rem broot ^
+rem zoxide ^
+rem fzf ^
+rem psfzf ^
+rem ripgrep ^
+rem fd ^
+rem bat ^
 
 REM ======================================================
 REM  Scoop apps/buckets installer (User mode only)

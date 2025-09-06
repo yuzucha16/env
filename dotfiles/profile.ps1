@@ -3,7 +3,7 @@
 # Import
 # For scoop completion
 Import-Module "$($(Get-Item $(Get-Command scoop.ps1).Path).Directory.Parent.FullName)\modules\scoop-completion"
-Import-Module PSFzf
+#Import-Module PSFzf
 
 # For starship
 Invoke-Expression (&starship init powershell)
@@ -16,6 +16,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 # Functions
 
+<#
 # FZF search
 Set-PsFzfOption -PsReadlineChordProvider 'Ctrl+t' -PsReadlineChordReverseHistory 'Ctrl+r'
 
@@ -196,4 +197,4 @@ if (Get-Module -ListAvailable PSFzf) {
     # 代表的なバインド例（お好みで）
     # Set-PsFzfOption -PsReadlineChordProvider 'Ctrl+t' -PsReadlineChordReverseHistory 'Ctrl+r'
 }
-
+#>

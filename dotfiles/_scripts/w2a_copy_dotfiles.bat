@@ -25,26 +25,23 @@ set "FILES[5]=settings.json|%USERPROFILE%\scoop\apps\windows-terminal\current\se
 set "FILES[6]=config\git\config|%USERPROFILE%\.config\git\config"
 set "FILES[7]=home\.gitconfig|%USERPROFILE%\.gitconfig"
 set "FILES[8]=home\.gitignore_global|%USERPROFILE%\.gitignore_global"
-set "FILES[9]=config\nvim-win\init.lua|%USERPROFILE%\.config\nvim-win\init.lua"
-set "FILES[10]=config\nvim-win\lazy-lock.json|%USERPROFILE%\.config\nvim-win\lazy-lock.json"
-set "FILES[11]=config\nvim-win\lua\util.lua|%USERPROFILE%\.config\nvim-win\lua\util.lua"
-set "FILES[12]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml"
-set "FILES[13]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
-set "FILES[14]=vscode|%APPDATA%\Code\User"
-set "FILES[15]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk"
-set "FILES[16]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1"
-set "FILES[17]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1"
-set "FILES[18]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\config.nu"
-set "FILES[19]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\env.nu"
-set "FILES[20]=xyplorer|%VAULT_HOME%\tool\xyplorer_full_noinstall\Data"
-set "FILES[21]=typora\conf.user.json|%APPDATA%\Typora\conf\conf.user.json"
-set "FILES[22]=typora\themes|%APPDATA%\Typora\themes"
-set "FILES[23]=config\bat\config|%USERPROFILE%\.config\bat\config"
-set "MAX_IDX=23
+set "FILES[9]=config\starship\starship.toml|%USERPROFILE%\.config\starship.toml"
+set "FILES[10]=vscode|%APPDATA%\Code\User"
+set "FILES[11]=autohotkey\Autohotkey64.ahk|%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Autohotkey64.ahk"
+set "FILES[12]=Microsoft.PowerShell_profile.ps1|%USERPROFILE%\Documents\PowerShell\Microsoft\PowerShell_profile.ps1"
+set "FILES[13]=profile.ps1|%USERPROFILE%\Documents\PowerShell\profile.ps1"
+set "FILES[14]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\config.nu"
+set "FILES[15]=config\nushell\config.nu|%USERPROFILE%\.config\nushell\env.nu"
+set "FILES[16]=xyplorer|%VAULT_HOME%\tool\xyplorer_full_noinstall\Data"
+set "FILES[17]=typora\conf.user.json|%APPDATA%\Typora\conf\conf.user.json"
+set "FILES[18]=typora\themes|%APPDATA%\Typora\themes"
+set "MAX_IDX=18
 
-rem set "FILES[10]=config\nvim-shared|%USERPROFILE%\.config\nvim-win\lua\shared"
-REM            @("config",		               	       "$Home\.config\bat\config"),
-REM            @(".vimrc",                             "$Home\.vimrc"),
+rem set "FILES[9]=config\nvim-win\init.lua|%USERPROFILE%\.config\nvim-win\init.lua"
+rem set "FILES[10]=config\nvim-win\lazy-lock.json|%USERPROFILE%\.config\nvim-win\lazy-lock.json"
+rem set "FILES[11]=config\nvim-win\lua\util.lua|%USERPROFILE%\.config\nvim-win\lua\util.lua"
+rem set "FILES[12]=config\goneovim\settings.toml|%USERPROFILE%\.config\goneovim\settings.toml"
+rem set "FILES[23]=config\bat\config|%USERPROFILE%\.config\bat\config"
 
 REM === iterate list ===
 for /L %%i in (0,1,%MAX_IDX%) do (
