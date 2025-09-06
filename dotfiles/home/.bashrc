@@ -304,8 +304,7 @@ function prev() {
 
 command -v starship >/dev/null 2>&1 && eval "$(starship init bash)"
 
-cd ~/dev/src
-
-source /home/ycy/.config/broot/launcher/bash/br
 export EDITOR=nvim
 export VISUAL=nvim
+source ~/.config/broot/launcher/bash/br
+cd ~/dev/src

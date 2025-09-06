@@ -48,6 +48,7 @@ sudo apt clean
 
 # Rust application
 $HOME/.cargo/bin/cargo install broot lsd navi tealdeer
-tldr --update
+$HOME/.cargo/bin/tldr --update
+$HOME/.cargo/bin/broot
 
 echo "[*] Install complete!"
