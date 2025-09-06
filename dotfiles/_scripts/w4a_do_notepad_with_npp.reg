@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; notepad.exe を Notepad++ に置き換え（64bit版 Notepad++ の既定パス）
+; 引数: -notepadStyleCmdline（Notepad互換の引数解釈）, -z（常に新規ウィンドウ）
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
+"Debugger"="\"C:\\Users\\kaz\\scoop\\apps\\notepadplusplus\\current\\notepad++.exe\" -notepadStyleCmdline -z"
+
+; 32bitプロセス側（WOW64）にも適用しておくと安心
+;[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
+"Debugger"="\"C:\\Users\\kaz\\scoop\\apps\\notepadplusplus\\current\\notepad++.exe\" -notepadStyleCmdline -z"

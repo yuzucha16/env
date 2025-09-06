@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; IFEO の Debugger 値を削除して既定の Notepad に戻す
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
+"Debugger"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
+"Debugger"=-
