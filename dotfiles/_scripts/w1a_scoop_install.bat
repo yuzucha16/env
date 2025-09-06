@@ -4,15 +4,10 @@ set APPS=^
 windows-terminal ^
 pwsh ^
 PSReadLine ^
-psfzf ^
 nu ^
 scoop-completion ^
 autohotkey ^
 starship ^
-clangd ^
-llvm ^
-cmake ^
-ninja ^
 nodejs ^
 notepadplusplus ^
 neovim ^
@@ -31,11 +26,16 @@ lsd ^
 broot ^
 zoxide ^
 fzf ^
+psfzf ^
 ripgrep ^
 fd ^
 bat ^
 sudo
 
+rem clangd ^
+rem llvm ^
+rem cmake ^
+rem ninja ^
 rem vscode ^
 rem doxygen ^
 rem plantuml ^
