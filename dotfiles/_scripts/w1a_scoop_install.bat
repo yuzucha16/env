@@ -8,11 +8,17 @@ nu ^
 scoop-completion ^
 autohotkey ^
 starship ^
+clangd ^
+llvm ^
+cmake ^
+ninja ^
 nodejs ^
 notepadplusplus ^
 neovim ^
 goneovim ^
 winmerge ^
+teraterm ^
+irfanview ^
 typora ^
 marp ^
 pdf-xchange-editor ^
@@ -20,7 +26,13 @@ ghq ^
 fork ^
 p4v ^
 which ^
-broot 
+lsd ^
+broot ^
+zoxide ^
+fzf ^
+ripgrep ^
+fd ^
+sudo
 
 rem vscode ^
 rem doxygen ^
