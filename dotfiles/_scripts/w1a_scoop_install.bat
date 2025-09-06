@@ -13,7 +13,7 @@ notepadplusplus ^
 neovim ^
 goneovim ^
 winmerge ^
-qownnotes ^
+typora ^
 marp ^
 pdf-xchange-editor ^
 ghq ^
