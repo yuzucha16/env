@@ -9,6 +9,7 @@ set "XDG_STATE_HOME=%USERPROFILE%\.local\state"
 set "VAULT_HOME=%USERPROFILE%\vault"
 set "GHQ_ROOT=%USERPROFILE%\vault"
 set "MY_ROOT=%USERPROFILE%\vault\github.com\yuzucha16"
+set "WSL_HOME=\\wsl$\ubuntu-24.04\home\yy"
 set "NVIM_APPNAME=nvim-win"
 
 REM 永続化するために setx を使う (User スコープ)
@@ -20,6 +21,7 @@ setx XDG_STATE_HOME "%XDG_STATE_HOME%"
 setx VAULT_HOME "%VAULT_HOME%"
 setx GHQ_ROOT "%GHQ_ROOT%"
 setx MY_ROOT "%MY_ROOT%"
+setx WSL_HOME "%WSL_HOME%"
 setx NVIM_APPNAME "%NVIM_APPNAME%"
 
 REM ディレクトリ作成
@@ -39,6 +41,7 @@ echo XDG_STATE_HOME     =%XDG_STATE_HOME%
 echo VAULT_HOME         =%VAULT_HOME%
 echo GHQ_ROOT           =%GHQ_ROOT%
 echo MY_ROOT            =%MY_ROOT%
+echo WSL_HOME           =%WSL_HOME%
 echo NVIM_APPNAME       =%NVIM_APPNAME%
 
 pause
