@@ -9,12 +9,12 @@ CursorSmoothMove  = false          # 体感差は小、切ると軽くなる
 RenderItalic      = true
 RenderBold        = true
 
-StartMaximizedWindow = false
-RestoreWindowGeometry = false
-WindowX = 960        # ウィンドウの初期位置（左上座標、単位はピクセル）
-WindowY = 0
-WindowWidth  = 960   # ウィンドウの初期サイズ（単位はピクセル）
-WindowHeight = 1080
+#StartMaximizedWindow = false
+#RestoreWindowGeometry = false
+WindowX = 720        # ウィンドウの初期位置（左上座標、単位はピクセル）
+WindowY = 50
+WindowWidth  = 720   # ウィンドウの初期サイズ（単位はピクセル）
+WindowHeight = 960
 
 # 透過やぼかしは見栄えは良いが GPU/描画トラブルの温床なので常用はオフ
 Transparent       = 1.0            # 1.0 = 不透明（安定）
