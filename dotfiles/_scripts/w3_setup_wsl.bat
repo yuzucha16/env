@@ -10,9 +10,9 @@ rem --- ハイパーバイザ起動を有効化 ---
 bcdedit /set hypervisorlaunchtype auto
 
 echo Please reboot now. After reboot, run the following manually:
-echo   wsl --update
-echo   wsl --list --online
-echo   wsl --install -d Ubuntu-24.04
+wsl --update
+wsl --list --online
+wsl --install -d Ubuntu-24.04
 
 :END
 pause
