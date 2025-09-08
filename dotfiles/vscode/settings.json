@@ -16,6 +16,7 @@
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.colorTheme": "Everforest Dark",
+  "editor.fontFamily": "HackGen Console NF",
   "terminal.integrated.smoothScrolling": true,
 
   "files.encoding": "utf8",
@@ -48,4 +49,8 @@
   "explorer.autoReveal": false,
 
   "editor.codeLens": false
+
+  "extensions.experimental.affinity": {
+      "asvetliakov.vscode-neovim": 1
+  }
 }

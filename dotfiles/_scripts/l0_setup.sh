@@ -11,9 +11,9 @@ set -euo pipefail
 
 # windowsのパスを継承しない
 # appendWindowsPath だけ false にする（存在すれば置換）
-sudo sed -i '/^\[interop\]/,/^\[/{s/^[[:space:]]*appendWindowsPath[[:space:]]*=.*$/appendWindowsPath = false/}' /etc/wsl.conf
+#sudo sed -i '/^\[interop\]/,/^\[/{s/^[[:space:]]*appendWindowsPath[[:space:]]*=.*$/appendWindowsPath = false/}' /etc/wsl.conf
 # [interop] セクションが無ければ追記
-grep -q '^\[interop\]' /etc/wsl.conf || echo -e '\n[interop]\nappendWindowsPath = false' | sudo tee -a /etc/wsl.conf >/dev/null
+#grep -q '^\[interop\]' /etc/wsl.conf || echo -e '\n[interop]\nappendWindowsPath = false' | sudo tee -a /etc/wsl.conf >/dev/null
 
 # 更新
 echo "[*] Updating package lists..."
