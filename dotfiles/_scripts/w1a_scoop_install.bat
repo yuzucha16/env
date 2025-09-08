@@ -4,13 +4,13 @@ set APPS=^
 windows-terminal ^
 pwsh ^
 PSReadLine ^
-nu ^
 scoop-completion ^
 autohotkey ^
 starship ^
 notepadplusplus ^
 vscode ^
 winmerge ^
+winscp ^
 teraterm ^
 irfanview ^
 typora ^
@@ -22,6 +22,7 @@ p4v ^
 which ^
 sudo
 
+rem nu ^
 rem neovim ^
 rem goneovim ^
 rem clangd ^
@@ -29,7 +30,6 @@ rem llvm ^
 rem cmake ^
 rem ninja ^
 rem nodejs ^
-rem vscode ^
 rem doxygen ^
 rem plantuml ^
 rem graphviz ^

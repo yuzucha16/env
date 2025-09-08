@@ -75,12 +75,6 @@
                 "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
                 "hidden": false,
                 "name": "Ubuntu-24.04"
-            },
-            {
-                "commandline": "nu.exe",
-                "guid": "{dbf828cf-7f87-4f5a-a8f1-d0491fa60a95}",
-                "hidden": false,
-                "name": "nushell"
             }
         ]
     },
