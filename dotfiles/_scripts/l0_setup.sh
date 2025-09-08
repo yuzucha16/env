@@ -45,10 +45,9 @@ sudo apt clean
 : "${XDG_CACHE_HOME:=$HOME/.cache}"
 : "${XDG_DATA_HOME:=$HOME/.local/share}"
 : "${XDG_STATE_HOME:=$HOME/.local/state}"
-: "${NVIM_APPNAME:=nvim-wsl}"
 
 # ---- 現在のシェルに反映 ----
-export XDG_CONFIG_HOME XDG_CACHE_HOME XDG_DATA_HOME XDG_STATE_HOME NVIM_APPNAME
+export XDG_CONFIG_HOME XDG_CACHE_HOME XDG_DATA_HOME XDG_STATE_HOME
 
 ensure_export() {
   local var="$1"
