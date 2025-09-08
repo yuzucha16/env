@@ -31,9 +31,14 @@ sudo apt install -y "${PACKAGES[@]}"
 # Starhip
 curl -sS https://starship.rs/install.sh | sh
 
-# Nvim 0.11+
-sudo apt install -y snapd
-sudo snap install nvim --classic
+# Nvim 0.11.4 from appImage
+cd /tmp
+curl -LO https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-x86_64.appimage
+sudo chmod +x nvim-linux-x86_64.appimage
+sudo mv nvim-linux-x86_64.appimage /usr/local/bin/nvim
+/usr/local/bin/nvim --version
+#sudo apt install -y snapd
+#sudo snap install nvim --classic
 
 # 不要なパッケージ削除
 echo "[*] Cleaning up..."

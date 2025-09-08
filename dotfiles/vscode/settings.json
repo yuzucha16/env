@@ -50,7 +50,9 @@
 
   "editor.codeLens": false
 
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitPath": "/home/yy/.config/nvim/init.lua",
   "extensions.experimental.affinity": {
-      "asvetliakov.vscode-neovim": 1
+    "asvetliakov.vscode-neovim": 1
   }
 }
