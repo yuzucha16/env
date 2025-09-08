@@ -52,8 +52,13 @@ map("n", "<leader>gx", ":Git switch ",                   { desc = "Git switch br
 map("n", "<leader>gl", ":Git log --oneline --graph<CR>", { desc = "Git log oneline" })
 
 -- ===== Git: gitsigns（nil 安全） =====
-local function with_gs(f)
-  return function(...) pcall(function() require("gitsigns")[f](...) end) end
+local function with_gs(name)
+  return function(...)
+    local ok, gs = pcall(require, "gitsigns")
+    if not ok or type(gs[name]) ~= "function" then return end
+    -- pcall の第1引数に関数、その後に可変長引数を渡す
+    pcall(gs[name], ...)
+  end
 end
 map("n", "]h", with_gs("next_hunk"),  { desc = "Next hunk" })
 map("n", "[h", with_gs("prev_hunk"),  { desc = "Prev hunk" })

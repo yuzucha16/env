@@ -69,8 +69,7 @@ echo "[INFO] Mode=$MODE  DryRun=$DRY_RUN"
 
 # ===== Prepare dirs =====
 mkdir -p "$DST_DIR/.config/git"
-mkdir -p "$DST_DIR/.config/nvim-wsl"
-mkdir -p "$DST_DIR/.config/nvim-wsl/lua"
+mkdir -p "$DST_DIR/.config/nvim"
 mkdir -p "$DST_DIR/.config/broot"
 mkdir -p "$DST_DIR/.config/pet"
 mkdir -p "$DST_DIR/.config"
@@ -121,16 +120,12 @@ do_stow "$SRC_DIR" "$DST_DIR" "home"
 CONFIG_DIR="$SRC_DIR/config"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/broot"               "broot"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/git"                 "git"
-do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl"            "nvim-wsl"
+do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim"                "nvim"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/pet"                 "pet"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config"                     "starship"
 
 # XDG_LOCAL_HOME
 CONFIG_DIR="$SRC_DIR/share"
 do_stow "$CONFIG_DIR" "$DST_DIR/.local/share/navi/cheats/denisidoro__cheats" "denisidoro__cheats"
-
-# NVIM common
-CONFIG_DIR="$SRC_DIR/config/nvim-win"
-do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim-wsl/lua"   "lua"
 
 echo "[DONE] stow ${MODE} completed."
