@@ -15,6 +15,7 @@
   "workbench.editor.wrapTabs": true,
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "Everforest Dark",
   "terminal.integrated.smoothScrolling": true,
 
   "files.encoding": "utf8",
@@ -36,17 +37,6 @@
   "vim.cursorStylePerMode.insert": "line",
   "vim.autoSwitchInputMethod.enable": false,
 
-  "clangd.arguments": [
-    "--background-index",
-    "--clang-tidy",
-    "--header-insertion=never",
-    "--completion-style=detailed",
-    "--query-driver=/usr/bin/arm-none-eabi-*,/opt/gcc-arm*/bin/arm-none-eabi-*"
-  ],
-  "clangd.onConfigChanged": "restart",
-  "C_Cpp.intelliSenseEngine": "Disabled",
-  "C_Cpp.formatting": "Disabled",
-
   "cmake.buildDirectory": "${workspaceFolder}/build",
   "cmake.configureOnOpen": false,
   "cmake.generator": "Ninja",
@@ -56,8 +46,6 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.autoReveal": false,
-
-  "workbench.colorTheme": "Gruvbox Material Dark",
 
   "editor.codeLens": false
 }
