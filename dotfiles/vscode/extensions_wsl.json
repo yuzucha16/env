@@ -1,0 +1,177 @@
+[{
+        "identifier": {
+            "id": "asvetliakov.vscode-neovim",
+            "uuid": "caf8995c-5426-4bf7-9d01-f7968ebd49bb"
+        },
+        "version": "1.18.24",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/asvetliakov.vscode-neovim-1.18.24",
+            "scheme": "file"
+        },
+        "relativeLocation": "asvetliakov.vscode-neovim-1.18.24",
+        "metadata": {
+            "installedTimestamp": 1757342383203,
+            "pinned": false,
+            "source": "gallery",
+            "id": "caf8995c-5426-4bf7-9d01-f7968ebd49bb",
+            "publisherId": "ce6190db-6762-4c9c-99c7-1717b9504159",
+            "publisherDisplayName": "Alexey Svetliakov",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode.cpptools-themes",
+            "uuid": "99b17261-8f6e-45f0-9ad5-a69c6f509a4f"
+        },
+        "version": "2.0.0",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/ms-vscode.cpptools-themes-2.0.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode.cpptools-themes-2.0.0",
+        "metadata": {
+            "installedTimestamp": 1757343262159,
+            "pinned": false,
+            "source": "gallery",
+            "id": "99b17261-8f6e-45f0-9ad5-a69c6f509a4f",
+            "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode.cpptools-extension-pack",
+            "uuid": "3957b2f6-f086-49b5-a7b4-5da772123130"
+        },
+        "version": "1.3.1",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/ms-vscode.cpptools-extension-pack-1.3.1",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode.cpptools-extension-pack-1.3.1",
+        "metadata": {
+            "installedTimestamp": 1757343262157,
+            "source": "gallery",
+            "id": "3957b2f6-f086-49b5-a7b4-5da772123130",
+            "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode.cpptools",
+            "uuid": "690b692e-e8a9-493f-b802-8089d50ac1b2"
+        },
+        "version": "1.26.3",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/ms-vscode.cpptools-1.26.3-linux-x64",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode.cpptools-1.26.3-linux-x64",
+        "metadata": {
+            "installedTimestamp": 1757343304634,
+            "pinned": false,
+            "source": "gallery",
+            "id": "690b692e-e8a9-493f-b802-8089d50ac1b2",
+            "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "linux-x64",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-ceintl.vscode-language-pack-ja",
+            "uuid": "077515fe-1509-49c0-9dcc-5511b41682fc"
+        },
+        "version": "1.103.2025081309",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ja-1.103.2025081309",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-ceintl.vscode-language-pack-ja-1.103.2025081309",
+        "metadata": {
+            "isApplicationScoped": true,
+            "installedTimestamp": 1757343447037,
+            "pinned": false,
+            "source": "gallery",
+            "id": "077515fe-1509-49c0-9dcc-5511b41682fc",
+            "publisherId": "0b0882c3-aee3-4d7c-b5f9-872f9be0a115",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "gruntfuggly.todo-tree",
+            "uuid": "261cac81-cd7b-4555-bb41-0c2d2bcd3e70"
+        },
+        "version": "0.0.226",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/gruntfuggly.todo-tree-0.0.226",
+            "scheme": "file"
+        },
+        "relativeLocation": "gruntfuggly.todo-tree-0.0.226",
+        "metadata": {
+            "installedTimestamp": 1757343559080,
+            "pinned": false,
+            "source": "gallery",
+            "id": "261cac81-cd7b-4555-bb41-0c2d2bcd3e70",
+            "publisherId": "d4906d2e-f2ee-492d-9c7c-02b6160599ec",
+            "publisherDisplayName": "Gruntfuggly",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode.cmake-tools",
+            "uuid": "7c889349-8749-43d4-8b5e-08939936d7f4"
+        },
+        "version": "1.21.36",
+        "location": {
+            "$mid": 1,
+            "path": "/home/yy/.vscode-server/extensions/ms-vscode.cmake-tools-1.21.36",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode.cmake-tools-1.21.36",
+        "metadata": {
+            "installedTimestamp": 1757345383033,
+            "pinned": false,
+            "source": "gallery",
+            "id": "7c889349-8749-43d4-8b5e-08939936d7f4",
+            "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }
+]
