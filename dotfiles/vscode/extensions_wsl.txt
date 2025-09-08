@@ -1,0 +1,7 @@
+asvetliakov.vscode-neovim
+gruntfuggly.todo-tree
+ms-ceintl.vscode-language-pack-ja
+ms-vscode.cmake-tools
+ms-vscode.cpptools
+ms-vscode.cpptools-extension-pack
+ms-vscode.cpptools-themes

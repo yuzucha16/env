@@ -1,1 +1,253 @@
-[{"identifier":{"id":"ms-vscode-remote.remote-ssh-edit","uuid":"bfeaf631-bcff-4908-93ed-fda4ef9a0c5c"},"version":"0.87.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode-remote.remote-ssh-edit-0.87.0","scheme":"file"},"relativeLocation":"ms-vscode-remote.remote-ssh-edit-0.87.0","metadata":{"installedTimestamp":1757335609543,"pinned":false,"source":"gallery","id":"bfeaf631-bcff-4908-93ed-fda4ef9a0c5c","publisherId":"ac9410a2-0d75-40ec-90de-b59bb705801d","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"ms-vscode-remote.remote-ssh","uuid":"607fd052-be03-4363-b657-2bd62b83d28a"},"version":"0.120.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode-remote.remote-ssh-0.120.0","scheme":"file"},"relativeLocation":"ms-vscode-remote.remote-ssh-0.120.0","metadata":{"installedTimestamp":1757335609541,"pinned":false,"source":"gallery","id":"607fd052-be03-4363-b657-2bd62b83d28a","publisherId":"ac9410a2-0d75-40ec-90de-b59bb705801d","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"ms-vscode.remote-explorer","uuid":"11858313-52cc-4e57-b3e4-d7b65281e34b"},"version":"0.5.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode.remote-explorer-0.5.0","scheme":"file"},"relativeLocation":"ms-vscode.remote-explorer-0.5.0","metadata":{"installedTimestamp":1757335609544,"pinned":false,"source":"gallery","id":"11858313-52cc-4e57-b3e4-d7b65281e34b","publisherId":"5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"jdinhlife.gruvbox","uuid":"c6d564c4-ca8c-45ba-abf6-c85f2d1468d8"},"version":"1.29.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/jdinhlife.gruvbox-1.29.0","scheme":"file"},"relativeLocation":"jdinhlife.gruvbox-1.29.0","metadata":{"installedTimestamp":1757335676090,"pinned":false,"source":"gallery","id":"c6d564c4-ca8c-45ba-abf6-c85f2d1468d8","publisherId":"571210a8-f372-43c2-8b5a-018868d4ac96","publisherDisplayName":"jdinhlife","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"cocopon.iceberg-theme","uuid":"32d281a3-1221-4c5c-8a95-4d30f0e667ce"},"version":"2.0.5","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/cocopon.iceberg-theme-2.0.5","scheme":"file"},"relativeLocation":"cocopon.iceberg-theme-2.0.5","metadata":{"installedTimestamp":1757335709874,"pinned":false,"source":"gallery","id":"32d281a3-1221-4c5c-8a95-4d30f0e667ce","publisherId":"3052c596-a163-4514-a2b5-f797671f83fc","publisherDisplayName":"cocopon","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"sainnhe.everforest","uuid":"330982cd-dddd-4939-b9ad-656ce474b089"},"version":"0.3.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/sainnhe.everforest-0.3.0","scheme":"file"},"relativeLocation":"sainnhe.everforest-0.3.0","metadata":{"installedTimestamp":1757335751662,"pinned":false,"source":"gallery","id":"330982cd-dddd-4939-b9ad-656ce474b089","publisherId":"cd5355a7-bbfb-4a47-8f70-727aed458bc8","publisherDisplayName":"sainnhe","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"ms-vscode-remote.remote-wsl","uuid":"f0c5397b-d357-4197-99f0-cb4202f22818"},"version":"0.99.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode-remote.remote-wsl-0.99.0","scheme":"file"},"relativeLocation":"ms-vscode-remote.remote-wsl-0.99.0","metadata":{"installedTimestamp":1757335868658,"pinned":false,"source":"gallery","id":"f0c5397b-d357-4197-99f0-cb4202f22818","publisherId":"ac9410a2-0d75-40ec-90de-b59bb705801d","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"ms-ceintl.vscode-language-pack-ja","uuid":"077515fe-1509-49c0-9dcc-5511b41682fc"},"version":"1.103.2025081309","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-ceintl.vscode-language-pack-ja-1.103.2025081309","scheme":"file"},"relativeLocation":"ms-ceintl.vscode-language-pack-ja-1.103.2025081309","metadata":{"isApplicationScoped":true,"installedTimestamp":1757343447325,"pinned":false,"source":"gallery","id":"077515fe-1509-49c0-9dcc-5511b41682fc","publisherId":"0b0882c3-aee3-4d7c-b5f9-872f9be0a115","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"wayou.vscode-todo-highlight","uuid":"97a08c5f-6667-4242-a5c5-045dfb6bd4b9"},"version":"1.0.5","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/wayou.vscode-todo-highlight-1.0.5","scheme":"file"},"relativeLocation":"wayou.vscode-todo-highlight-1.0.5","metadata":{"installedTimestamp":1757343547713,"pinned":false,"source":"gallery","id":"97a08c5f-6667-4242-a5c5-045dfb6bd4b9","publisherId":"47daa402-5396-4346-b7bd-62494d6d63ec","publisherDisplayName":"Wayou Liu","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}},{"identifier":{"id":"pkief.material-icon-theme","uuid":"5db78037-f674-459f-a236-db622c427c5b"},"version":"5.27.0","location":{"$mid":1,"path":"/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/pkief.material-icon-theme-5.27.0","scheme":"file"},"relativeLocation":"pkief.material-icon-theme-5.27.0","metadata":{"installedTimestamp":1757343708617,"pinned":false,"source":"gallery","id":"5db78037-f674-459f-a236-db622c427c5b","publisherId":"f9e5bc2f-fea1-4075-917f-d83e01e69f56","publisherDisplayName":"Philipp Kief","targetPlatform":"undefined","updated":false,"private":false,"isPreReleaseVersion":false,"hasPreReleaseVersion":false}}]
+[{
+        "identifier": {
+            "id": "ms-vscode-remote.remote-ssh-edit",
+            "uuid": "bfeaf631-bcff-4908-93ed-fda4ef9a0c5c"
+        },
+        "version": "0.87.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode-remote.remote-ssh-edit-0.87.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode-remote.remote-ssh-edit-0.87.0",
+        "metadata": {
+            "installedTimestamp": 1757335609543,
+            "pinned": false,
+            "source": "gallery",
+            "id": "bfeaf631-bcff-4908-93ed-fda4ef9a0c5c",
+            "publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode-remote.remote-ssh",
+            "uuid": "607fd052-be03-4363-b657-2bd62b83d28a"
+        },
+        "version": "0.120.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode-remote.remote-ssh-0.120.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode-remote.remote-ssh-0.120.0",
+        "metadata": {
+            "installedTimestamp": 1757335609541,
+            "pinned": false,
+            "source": "gallery",
+            "id": "607fd052-be03-4363-b657-2bd62b83d28a",
+            "publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode.remote-explorer",
+            "uuid": "11858313-52cc-4e57-b3e4-d7b65281e34b"
+        },
+        "version": "0.5.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode.remote-explorer-0.5.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode.remote-explorer-0.5.0",
+        "metadata": {
+            "installedTimestamp": 1757335609544,
+            "pinned": false,
+            "source": "gallery",
+            "id": "11858313-52cc-4e57-b3e4-d7b65281e34b",
+            "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "jdinhlife.gruvbox",
+            "uuid": "c6d564c4-ca8c-45ba-abf6-c85f2d1468d8"
+        },
+        "version": "1.29.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/jdinhlife.gruvbox-1.29.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "jdinhlife.gruvbox-1.29.0",
+        "metadata": {
+            "installedTimestamp": 1757335676090,
+            "pinned": false,
+            "source": "gallery",
+            "id": "c6d564c4-ca8c-45ba-abf6-c85f2d1468d8",
+            "publisherId": "571210a8-f372-43c2-8b5a-018868d4ac96",
+            "publisherDisplayName": "jdinhlife",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "cocopon.iceberg-theme",
+            "uuid": "32d281a3-1221-4c5c-8a95-4d30f0e667ce"
+        },
+        "version": "2.0.5",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/cocopon.iceberg-theme-2.0.5",
+            "scheme": "file"
+        },
+        "relativeLocation": "cocopon.iceberg-theme-2.0.5",
+        "metadata": {
+            "installedTimestamp": 1757335709874,
+            "pinned": false,
+            "source": "gallery",
+            "id": "32d281a3-1221-4c5c-8a95-4d30f0e667ce",
+            "publisherId": "3052c596-a163-4514-a2b5-f797671f83fc",
+            "publisherDisplayName": "cocopon",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "sainnhe.everforest",
+            "uuid": "330982cd-dddd-4939-b9ad-656ce474b089"
+        },
+        "version": "0.3.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/sainnhe.everforest-0.3.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "sainnhe.everforest-0.3.0",
+        "metadata": {
+            "installedTimestamp": 1757335751662,
+            "pinned": false,
+            "source": "gallery",
+            "id": "330982cd-dddd-4939-b9ad-656ce474b089",
+            "publisherId": "cd5355a7-bbfb-4a47-8f70-727aed458bc8",
+            "publisherDisplayName": "sainnhe",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-vscode-remote.remote-wsl",
+            "uuid": "f0c5397b-d357-4197-99f0-cb4202f22818"
+        },
+        "version": "0.99.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-vscode-remote.remote-wsl-0.99.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-vscode-remote.remote-wsl-0.99.0",
+        "metadata": {
+            "installedTimestamp": 1757335868658,
+            "pinned": false,
+            "source": "gallery",
+            "id": "f0c5397b-d357-4197-99f0-cb4202f22818",
+            "publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "ms-ceintl.vscode-language-pack-ja",
+            "uuid": "077515fe-1509-49c0-9dcc-5511b41682fc"
+        },
+        "version": "1.103.2025081309",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/ms-ceintl.vscode-language-pack-ja-1.103.2025081309",
+            "scheme": "file"
+        },
+        "relativeLocation": "ms-ceintl.vscode-language-pack-ja-1.103.2025081309",
+        "metadata": {
+            "isApplicationScoped": true,
+            "installedTimestamp": 1757343447325,
+            "pinned": false,
+            "source": "gallery",
+            "id": "077515fe-1509-49c0-9dcc-5511b41682fc",
+            "publisherId": "0b0882c3-aee3-4d7c-b5f9-872f9be0a115",
+            "publisherDisplayName": "Microsoft",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "wayou.vscode-todo-highlight",
+            "uuid": "97a08c5f-6667-4242-a5c5-045dfb6bd4b9"
+        },
+        "version": "1.0.5",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/wayou.vscode-todo-highlight-1.0.5",
+            "scheme": "file"
+        },
+        "relativeLocation": "wayou.vscode-todo-highlight-1.0.5",
+        "metadata": {
+            "installedTimestamp": 1757343547713,
+            "pinned": false,
+            "source": "gallery",
+            "id": "97a08c5f-6667-4242-a5c5-045dfb6bd4b9",
+            "publisherId": "47daa402-5396-4346-b7bd-62494d6d63ec",
+            "publisherDisplayName": "Wayou Liu",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }, {
+        "identifier": {
+            "id": "pkief.material-icon-theme",
+            "uuid": "5db78037-f674-459f-a236-db622c427c5b"
+        },
+        "version": "5.27.0",
+        "location": {
+            "$mid": 1,
+            "path": "/C:/Users/ck/scoop/apps/vscode/1.103.2/data/extensions/pkief.material-icon-theme-5.27.0",
+            "scheme": "file"
+        },
+        "relativeLocation": "pkief.material-icon-theme-5.27.0",
+        "metadata": {
+            "installedTimestamp": 1757343708617,
+            "pinned": false,
+            "source": "gallery",
+            "id": "5db78037-f674-459f-a236-db622c427c5b",
+            "publisherId": "f9e5bc2f-fea1-4075-917f-d83e01e69f56",
+            "publisherDisplayName": "Philipp Kief",
+            "targetPlatform": "undefined",
+            "updated": false,
+            "private": false,
+            "isPreReleaseVersion": false,
+            "hasPreReleaseVersion": false
+        }
+    }
+]
