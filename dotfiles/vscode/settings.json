@@ -16,7 +16,7 @@
   "workbench.editor.wrapTabs": true,
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.smoothScrolling": true,
 
