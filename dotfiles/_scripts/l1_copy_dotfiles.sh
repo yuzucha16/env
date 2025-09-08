@@ -68,11 +68,12 @@ echo "[INFO] Using DST_DIR=$DST_DIR"
 echo "[INFO] Mode=$MODE  DryRun=$DRY_RUN"
 
 # ===== Prepare dirs =====
+mkdir -p "$DST_DIR/.config"
 mkdir -p "$DST_DIR/.config/git"
 mkdir -p "$DST_DIR/.config/nvim"
 mkdir -p "$DST_DIR/.config/broot"
 mkdir -p "$DST_DIR/.config/pet"
-mkdir -p "$DST_DIR/.config"
+mkdir -p "$DST_DIR/.vscode-server/extensions"
 mkdir -p "$DST_DIR/.local/share/navi/cheats/denisidoro__cheats"
 
 # ===== Helper =====
@@ -123,6 +124,10 @@ do_stow "$CONFIG_DIR" "$DST_DIR/.config/git"                 "git"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/nvim"                "nvim"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config/pet"                 "pet"
 do_stow "$CONFIG_DIR" "$DST_DIR/.config"                     "starship"
+
+# vscode
+CONFIG_DIR="$SRC_DIR/vscode"
+do_stow "$CONFIG_DIR" "$DST_DIR/.vscode-server/extensions"   "wsl"
 
 # XDG_LOCAL_HOME
 CONFIG_DIR="$SRC_DIR/share"
