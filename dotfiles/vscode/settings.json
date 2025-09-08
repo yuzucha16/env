@@ -10,13 +10,14 @@
   "editor.scrollbar.verticalHasArrows": true,
   "editor.cursorBlinking": "smooth",
   "editor.linkedEditing": true,
+  "editor.fontFamily": "HackGen Console NF",
   "workbench.tree.indent": 12,
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "workbench.editor.wrapTabs": true,
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.colorTheme": "Everforest Dark",
-  "editor.fontFamily": "HackGen Console NF",
+  "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.smoothScrolling": true,
 
   "files.encoding": "utf8",
@@ -48,11 +49,12 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.autoReveal": false,
 
-  "editor.codeLens": false
+  "editor.codeLens": false,
 
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
   "vscode-neovim.neovimInitPath": "/home/yy/.config/nvim/init.lua",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   }
+
 }
