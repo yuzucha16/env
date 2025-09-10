@@ -7,30 +7,30 @@ set -euo pipefail
 
 # 開発に必要なパッケージ一覧
 PACKAGES=(
-    stow
-    gawk
-    build-essential
-    ninja-build
-    cmake
-    universal-ctags
     git
+    stow
+    cmake
     pkg-config
-    unzip
-    fzf
+    ninja-build
+    build-essential
+    universal-ctags
+    gdb
+    bear
     clang
     clangd
     clang-tidy
     clang-format
-    lldb
     lld
+    lldb
     ccache
-    valgrind 
-    gdb 
-    bear
-    zoxide
-    fd-find
+    valgrind  
+    fzf
+    bat
     tree
+    zoxide
     ripgrep
+    fd-find
+    unzip
     # ここに追加したいツールを書いていく
 )
 
@@ -50,5 +50,8 @@ sudo apt clean
 $HOME/.cargo/bin/cargo install broot lsd navi tealdeer
 $HOME/.cargo/bin/tldr --update
 $HOME/.cargo/bin/broot
+
+# symbolic link
+sudo ln -s /usr/bin/batcat /usr/local/bin/bat
 
 echo "[*] Install complete!"
