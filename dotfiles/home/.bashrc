@@ -302,6 +302,12 @@ function prev() {
 # XDG 配下でのローカル拡張（マシン固有・社内PC等）
 [ -f "$XDG_CONFIG_HOME/bashrc.local" ] && . "$XDG_CONFIG_HOME/bashrc.local"
 
+# 社内プロキシ用 CA 証明書 (存在する環境のみ設定)
+CA_PATH=/mnt/c/vault/certs/company-ca.pem
+if [ -f "$CA_PATH" ]; then
+  export NODE_EXTRA_CA_CERTS="$CA_PATH"
+fi
+
 command -v starship >/dev/null 2>&1 && eval "$(starship init bash)"
 
 export EDITOR=nvim

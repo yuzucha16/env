@@ -12,6 +12,12 @@ Invoke-Expression (&starship init powershell)
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
+# 社内プロキシ用 CA 証明書 (存在する環境のみ設定)
+$caPath = "C:\vault\certs\company-ca.pem"
+if (Test-Path $caPath) {
+  $env:NODE_EXTRA_CA_CERTS = $caPath
+}
+
 # Alias
 
 # Functions

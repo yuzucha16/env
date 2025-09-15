@@ -1,14 +1,4 @@
 [
-  {
-    "key": "ctrl+alt+t",
-    "command": "workbench.action.terminal.moveIntoNewWindow",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+alt+shift+t",
-    "command": "workbench.action.createTerminalEditor",
-    "when": "editorTextFocus"
-  },
   { "key": "ctrl+:",
     "command": "workbench.action.quickTextSearch"
   }
