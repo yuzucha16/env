@@ -9,6 +9,7 @@ set "XDG_STATE_HOME=%USERPROFILE%\.local\state"
 set "XDG_BIN_HOME=%USERPROFILE%\.local\bin"
 set "VAULT_HOME=%USERPROFILE%\vault"
 set "GHQ_ROOT=%USERPROFILE%\vault"
+set "CERTS_DIR=%USERPROFILE%\vault\certs"
 set "MY_ROOT=%USERPROFILE%\vault\github.com\yuzucha16"
 set "WSL_HOME=\\wsl$\ubuntu-24.04\home\yy"
 
@@ -32,6 +33,7 @@ if not exist "%XDG_STATE_HOME%"     ( mkdir "%XDG_STATE_HOME%" )
 if not exist "%XDG_BIN_HOME%"       ( mkdir "%XDG_BIN_HOME%" )
 if not exist "%VAULT_HOME%"         ( mkdir "%VAULT_HOME%" )
 if not exist "%GHQ_ROOT%"           ( mkdir "%GHQ_ROOT%" )
+if not exist "%CERTS_DIR%"          ( mkdir "%CERTS_DIR%" )
 
 REM 確認表示 (現在のセッションでは setx の結果は反映されない点に注意)
 echo HOME               =%HOME%
@@ -42,6 +44,7 @@ echo XDG_STATE_HOME     =%XDG_STATE_HOME%
 echo XDG_BIN_HOME       =%XDG_BIN_HOME%
 echo VAULT_HOME         =%VAULT_HOME%
 echo GHQ_ROOT           =%GHQ_ROOT%
+echo CERTS_DIR          =%CERTS_DIR%
 echo MY_ROOT            =%MY_ROOT%
 echo WSL_HOME           =%WSL_HOME%
 

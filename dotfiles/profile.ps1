@@ -13,7 +13,7 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 # 社内プロキシ用 CA 証明書 (存在する環境のみ設定)
-$caPath = "C:\vault\certs\company-ca.pem"
+$caPath = "$env:CERTS_DIR\company-ca.pem"
 if (Test-Path $caPath) {
   $env:NODE_EXTRA_CA_CERTS = $caPath
 }
@@ -22,7 +22,6 @@ if (Test-Path $caPath) {
 
 # Functions
 
-<#
 # FZF search
 Set-PsFzfOption -PsReadlineChordProvider 'Ctrl+t' -PsReadlineChordReverseHistory 'Ctrl+r'
 
@@ -203,4 +202,3 @@ if (Get-Module -ListAvailable PSFzf) {
     # 代表的なバインド例（お好みで）
     # Set-PsFzfOption -PsReadlineChordProvider 'Ctrl+t' -PsReadlineChordReverseHistory 'Ctrl+r'
 }
-#>
