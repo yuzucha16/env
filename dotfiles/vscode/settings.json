@@ -51,6 +51,8 @@
 
   "editor.codeLens": false,
 
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },

@@ -72,6 +72,7 @@ mkdir -p \
   "$XDG_DATA_HOME" \
   "$XDG_STATE_HOME" \
   "$HOME/.local/bin" \
+  "$HOME/.ssh" \
 
 # zshインストール
 #sudo chsh -s /usr/bin/zsh
